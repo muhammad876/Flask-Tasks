@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Genius Clinical</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm " style="background-color:blue">
+  <!-- Brand/logo -->
+  <a class="navbar-brand font-italic" href="#" style="color: white;" >Genius Clinical</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link font-italic" href="{{ url_for('registration') }}" style="color: white;"onclick="">Registration</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-italic" style="color: white;" href="{{ url_for('login') }}">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-italic" style="color: white;" href="#">Feedback</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="row">
+
+  <div class="container mt-5" >
+    <div class="jumbotron" style="background-color: #f39c12;;">
+      <h1>Genius Clinical</h1> 
+      <h6 class="font-italic">Clinical Supply Planning made Simple</h6>   
+      <p>
+        We are a team of clinical supply planning proffessionals with the goal of providing you					
+        the easiest, most convenient solution to your clinical forecasting needs without breaking					
+        the bank. We know the struggles behind a successfull clincial supply operation, and we understand 					
+        the need for an easy to use system to help forecast, budget for, and plan for all your clinical trials					
+        around the globe.					            
+      </p>
+    </div>
+   
+  </div>
+    <div class="col col-md-4">
+
+    </div>
+    <div class="col col-md-4">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div class="col col-md-4"></div>
+</div>
+
+</body>
+</html>
